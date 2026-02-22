@@ -1,0 +1,52 @@
+/* Arc Wallet Roaster — custom styles */
+
+.roaster-app {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.title-font {
+  font-family: 'Bebas Neue', 'Impact', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.body-font {
+  font-family: 'DM Sans', 'system-ui', sans-serif;
+}
+
+.mono-font {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* Animated grid background */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Noise texture */
+.noise-bg {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+/* Slow pulse animations */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.06; transform: scale(1); }
+  50% { opacity: 0.12; transform: scale(1.05); }
+}
+
+@keyframes pulse-slow-2 {
+  0%, 100% { opacity: 0.08; transform: scale(1.05); }
+  50% { opacity: 0.04; transform: scale(1); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow-2 {
+  animation: pulse-slow-2 8s ease-in-out infinite;
+}

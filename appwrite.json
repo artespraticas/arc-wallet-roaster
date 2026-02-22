@@ -1,0 +1,17 @@
+{
+  "projectId": "6998b20c002219e573c7",
+  "buckets": [
+    {
+      "$id": "6998b7ad003d9829826b",
+      "$permissions": [],
+      "fileSecurity": false,
+      "name": "Arc Wallet Roaster",
+      "enabled": true,
+      "maximumFileSize": 5000000000,
+      "allowedFileExtensions": [],
+      "compression": "none",
+      "encryption": true,
+      "antivirus": true
+    }
+  ]
+}
